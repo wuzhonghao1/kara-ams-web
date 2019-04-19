@@ -1,0 +1,25 @@
+.businessApprovalSearch .ant-btn {
+  margin: 0;
+}
+
+.businessApprovalSearch {
+  width: 100%;
+}
+
+.businessApprovalSearch h1 {
+  font-size: 14px;
+  padding: 10px 0 10px 16px;
+}
+
+.businessApprovalSearch th.tHeader {
+  text-align: center;
+}
+
+.businessApprovalSearch .link {
+  color: #f4a034;
+  cursor:pointer;
+}
+
+.businessApprovalSearch .ant-table-wrapper {
+  padding-bottom: 5px;
+}

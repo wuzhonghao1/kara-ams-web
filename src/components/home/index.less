@@ -1,0 +1,86 @@
+@import '../../assets/css/ams-theme';
+
+.applIndex {
+  background: #fff;
+}
+
+.navbar {
+  padding: 32px 0;
+}
+
+.navbar > div > div {
+  border-radius: 4px;
+
+  & > a {
+    display: inline-block;
+    width: 100%;
+    padding: 34px 0;
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    text-align: center;
+  }
+
+  &:nth-child(1) {
+    background: #009ee7;
+  }
+
+  &:nth-child(2) {
+    background: #00bd9c;
+  }
+
+  &:nth-child(3) {
+    background: @primary-color;
+  }
+
+  &:nth-child(4) {
+    background: #f56654;
+  }
+
+  &:nth-child(5) {
+    background: #28aae3;
+  }
+
+  &:nth-child(6) {
+    background: #be80e4;
+  }
+
+  i {
+    margin-right: 10px;
+    font-size: 26px;
+    vertical-align: -3px;
+  }
+}
+
+.tableName {
+  & > h3 {
+    padding: 8px 20px 8px;
+    span {
+      margin-left: 16px;
+      b {
+        font-size: 14px;
+        color: @primary-color;
+      }
+    }
+  }
+
+  th.tHeader {
+    font-weight: bold;
+    text-align: center;
+  }
+
+  td {
+    text-align: center;
+  }
+
+  .taRight {
+    text-align: right;
+
+    & > button {
+      margin: 0 0 10px 0;
+    }
+  }
+  .ant-table {
+    margin-bottom: 10px;
+  }
+}

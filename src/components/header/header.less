@@ -1,0 +1,131 @@
+@import '../../assets/css/ams-theme';
+
+.m-header {
+  height: 50px;
+  min-width: 700px;
+  padding: 0;
+  border-bottom: 1px solid #ddd;
+  background-color: #fff;
+  .collapsed {
+    float: left;
+    height: 100%;
+    padding: 14px 16px;
+    line-height: 24px;
+    cursor: pointer;
+    .anticon {
+      font-size: 22px;
+    }
+  }
+  .title {
+    float: left;
+    height: 50px;
+    padding-left: 5px;
+    line-height: 50px;
+    font-size: 14px;
+    color: #f4a034;
+  }
+  .details {
+    float: right;
+    display: flex;
+    height: 100%;
+    margin-right: 16px;
+    align-items: center;
+    .menu {
+      .ant-dropdown-link {
+        padding: 10px 18px;
+        font-size: 16px;
+        color: @text-color;
+        .anticon {
+          position: relative;
+          top: 2px;
+          font-size: 20px;
+        }
+      }
+    }
+    .user {
+      display: flex;
+      align-items: center;
+      img {
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        margin: 0 30px 0 40px;
+      }
+      p {
+        white-space: nowrap;
+        margin-right: 50px;
+        span {
+          margin: 0 4px;
+        }
+      }
+      .more {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        top: 14px;
+        right: 16px;
+        z-index:1000;
+        .barMenu {
+          display: none;
+          padding-top: 10px;
+          background-color: #fff;
+          box-shadow: 0 2px 8px 0 #d5d5d5;
+          li {
+            text-align: center;
+            line-height: 40px;
+            cursor: pointer;
+            div {
+              font-size: 12px;
+              line-height: 14px;
+              padding-top: 5px;
+              color: #f4a034;
+            }
+            i {
+              color: #f4a034;
+            }
+          }
+          li:hover {
+            background-color: #f4a034;
+            color: #fff;
+            div {
+              color: #fff;
+            }
+            i {
+              color: #fff;
+            }
+          }
+          li:first-child {
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+          }
+          li:nth-child(2) {
+            border-top: 1px solid #ddd;
+            border-bottom: 1px solid #ddd;
+          }
+          li:nth-child(3) {
+            border-bottom: 1px solid #ddd;
+          }
+          li:last-child {
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+          }
+        }
+        .more:hover .barMenu{
+          display: block;
+        }
+        i {
+          font-size: 20px;
+          margin: 0 20px 0 20px;
+          cursor: pointer;
+          color: #f4a034;
+        }
+      }
+      .more:hover {
+        .barMenu {
+          display: block;
+        }
+      }
+    }
+  }
+}

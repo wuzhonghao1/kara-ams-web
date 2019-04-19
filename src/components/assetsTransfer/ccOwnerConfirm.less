@@ -1,0 +1,50 @@
+.result {
+  background: #fff;
+  .ant-btn {
+    margin: 0;
+  }
+}
+
+.m-card.condition {
+  padding: 0;
+}
+
+.result .error {
+  border-color: red !important;
+}
+
+span.expand {
+  display: inline-block;
+  margin-left: 6px;
+  color: #f4a034;
+  cursor: pointer;
+}
+
+span.expand:after {
+  position: absolute;
+  display: inline-block;
+  transform: rotate(45deg);
+  content: '';
+  margin: 2px 0 0 5px;
+  width: 8px;
+  height: 8px;
+  border: 1px solid #f4a034;
+  border-left: 0 none;
+  border-top: 0 none;
+  transition: transform 0.2s ease-in-out;
+
+}
+
+span.up:after {
+  position: absolute;
+  display: inline-block;
+  transform: rotate(-135deg);
+  content: '';
+  margin: 7px 0 0 5px;
+  width: 8px;
+  height: 8px;
+  border: 1px solid #f4a034;
+  border-left: 0 none;
+  border-top: 0 none;
+  transition: transform 0.2s ease-in-out;
+}

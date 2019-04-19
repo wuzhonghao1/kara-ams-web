@@ -1,0 +1,41 @@
+@import '../../../assets/css/ams-theme';
+
+.m-invalidate-info {
+  .ant-collapse {
+    margin-top: 20px;
+    border-radius: 0;
+    > .ant-collapse-item {
+      border-bottom: none;
+      > .ant-collapse-header {
+        height: 58px;
+        padding: 14px 32px 14px 0;
+        line-height: 30px;
+        .arrow {
+          top: 9px;
+          right: 16px;
+          left: auto;
+          height: 40px;
+          line-height: 40px;
+          color: @text-color;
+        }
+        .header {
+          .title {
+            margin-left: 20px;
+            font-size: 16px;
+          }
+          .arrowTip {
+            float: right;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+  .ant-collapse-borderless {
+    > .ant-collapse-item {
+      > .ant-collapse-content {
+        border-top: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,47 @@
+.ant-advanced-search-form {
+  padding: 6px 6px 6px 16px;
+  margin-bottom: 8px;
+  background: #fff;
+  border: 1px solid #d9d9d9;
+  border-radius: 3px;
+}
+
+.ant-advanced-search-form h1 {
+  font-size:14px;
+  margin-bottom: 8px;
+}
+
+.table-content {
+  padding: 12px 0;
+  background: #fff;
+  border: 1px solid #d9d9d9;
+  border-radius: 3px;
+}
+
+.table-content h1 {
+  padding: 0 16px;
+  margin-bottom: 12px;
+  font-size:14px;
+}
+
+.table-content h1 button {
+  float: right;
+}
+
+.footer {
+  width: 100%;
+  text-align: right;
+}
+
+.footer .save {
+  margin: 0 10px;
+}
+
+.table-content .ant-table {
+  width: 100%;
+}
+
+.table-content table thead tr th,
+.table-content table tbody tr td {
+  text-align: center;
+}

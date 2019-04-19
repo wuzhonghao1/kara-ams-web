@@ -1,0 +1,117 @@
+@import '../../assets/css/ams-theme';
+
+.m-slider {
+  position: relative;
+  height: 100%;
+  padding-top: 60px;
+  border-right: 1px solid #ddd;
+  .logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    .home {
+      display: block;
+      padding: 8px 24px;
+      background-color: #f4a034;
+      img {
+        display: block;
+        height: 35px;
+      }
+    }
+  }
+  .logo.mini {
+    .home {
+      padding: 8px 0 8px 14px;
+      text-align: center;
+      img {
+        width: 35px;
+      }
+    }
+  }
+}
+
+// 菜单展开
+.m-menu.ant-menu-inline {
+  border-right: 0; // 去掉菜单右边的边框
+  // 一级菜单 icon
+  .ant-menu-item,
+  .ant-menu-submenu-title{
+    .anticon {
+      position: relative;
+      top: 2px;
+      font-size: 20px;
+    }
+  }
+  // 有子菜单的一级菜单文字颜色
+  .ant-menu-submenu-title {
+    color: #141414;
+  }
+  // 点击可跳转的菜单（一级或二级）的文字颜色
+  .ant-menu-item {
+    color: #141414;
+  }
+  // 点击可跳转的菜单（二级）的文字颜色
+  // 设置 indent 为小圆点预留空间
+  .ant-menu-sub.ant-menu-inline > .ant-menu-item {
+    height: 36px;
+    line-height: 36px;
+    color: #666;
+    text-indent: 10px;
+  }
+  // 一级菜单字体大小
+  .ant-menu-item .anticon + span, .ant-menu-submenu-title .anticon + span {
+    font-size: 16px;
+  }
+  // 选中的菜单左侧边框效果
+  .ant-menu-item:after, .ant-menu-vertical .ant-menu-item:after {
+    right: auto;
+    left: 0;
+    border-right-width: 4px;
+  }
+  // 在子菜单前添加小圆点
+  .ant-menu-sub.ant-menu-inline > .ant-menu-item:before {
+    content: "";
+    position: absolute;
+    top: 16px;
+    left: 48px;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: #666;
+    transition: background 0.3 scubic-bezier(0.645, 0.045, 0.355, 1);
+  }
+}
+
+// 菜单箭头icon大小
+:root .m-menu .ant-menu-submenu-inline > .ant-menu-submenu-title:after {
+  font-size:20px;
+}
+
+// 选中的菜单背景颜色
+.m-menu.ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
+  background-color: #f3f3f3;
+}
+
+.m-menu.ant-menu-inline-collapsed.ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
+  background-color: transparent;
+}
+
+// 菜单折叠
+.m-menu.ant-menu-inline-collapsed {
+  width: 63px; // 设置宽度
+  // 一级跳转菜单和一级主菜单icon设置
+  > .ant-menu-item,
+  > .ant-menu-submenu > .ant-menu-submenu-title {
+    .anticon{
+      position: relative;
+      top: 2px;
+      font-size: 20px;
+    }
+  }
+}
+
+// 菜单折叠
+.m-menu.ant-menu-vertical {
+  border-right: none; // 去掉右边边框
+}

@@ -1,0 +1,167 @@
+// Tab 覆盖默认样式
+
+.ant-tabs-nav-container {
+  background: #ececec;
+}
+
+.ant-tabs.ant-tabs-card > .ant-tabs-bar .ant-tabs-nav-container {
+  height: 40px;
+}
+
+.ant-tabs.ant-tabs-card > .ant-tabs-bar .ant-tabs-nav-wrap {
+  height: 40px;
+  line-height: 40px;
+  font-size: 15px;
+  margin-bottom: 0;
+}
+
+.ant-tabs.ant-tabs-card > .ant-tabs-bar .ant-tabs-tab {
+  width: 270px;
+  margin-right: 10px;
+  padding: 0;
+  text-align: center;
+  border: 0 none;
+}
+
+.ant-tabs-bar {
+  margin-bottom: 0;
+}
+
+// 查询条件 样式
+.condition {
+  padding: 22px;
+
+  h3 {
+    color: #232322;
+    font-size: 14px;
+    padding-bottom: 10px;
+    font-weight: normal;
+  }
+
+  label {
+    display: inline-block;
+    width: 100%;
+    height: 28px;
+    line-height: 28px;
+    text-align: right;
+    color: #232322;
+  }
+
+  .ant-select {
+    width: 100%;
+  }
+
+  .taRight {
+    margin-top: 5px;
+    text-align: right;
+  }
+}
+
+.platform .result {
+  h3 {
+    color: #232322;
+    font-size: 14px;
+    padding: 8px 20px 10px;
+    font-weight: normal;
+  }
+
+  th.tHeader {
+    text-align: center;
+  }
+
+  .ant-pagination {
+    text-align: right;
+  }
+}
+
+.errorModal {
+  th.tHeader {
+    text-align: center;
+    span {
+      display: block;
+      padding: 10px 8px;
+    }
+  }
+}
+
+.ant-select-dropdown--multiple .ant-select-dropdown-menu-item-group .ant-select-dropdown-menu-item-group-title {
+  text-align: center;
+}
+
+.ant-select-dropdown--multiple .ant-select-dropdown-menu-item-group {
+  float: left;
+  width: 50%;
+}
+
+.m-card.ant-card.condition {
+  border-bottom: 1px dashed #d9d9d9;
+  margin-bottom: 10px;
+  .ant-card-body {
+    padding-bottom: 10px;
+  }
+}
+
+div.operate2 {
+  width:100%;
+  height:auto;
+  display: flex;
+}
+
+div.operate2 i {
+  position: relative;
+  display: block;
+  flex:1;
+  cursor:pointer;
+}
+
+.platform .operate2 i:hover span {
+  display: block;
+}
+
+.platform .operate2 i span {
+  display: none;
+  position: absolute;
+  left: 16px;
+  top: -15px;
+  width: 36px;
+  height: 15px;
+  line-height: 15px;
+  color: slategrey;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+span.expand {
+  display: inline-block;
+  margin-left: 6px;
+  color: #f4a034;
+  cursor: pointer;
+}
+
+span.expand:after {
+  position: absolute;
+  display: inline-block;
+  transform: rotate(45deg);
+  content: '';
+  margin: 5px 0 0 5px;
+  width: 8px;
+  height: 8px;
+  border: 1px solid #f4a034;
+  border-left: 0 none;
+  border-top: 0 none;
+  transition: transform 0.2s ease-in-out;
+}
+
+span.up:after {
+  position: absolute;
+  display: inline-block;
+  transform: rotate(-135deg);
+  content: '';
+  margin: 8px 0 0 5px;
+  width: 8px;
+  height: 8px;
+  border: 1px solid #f4a034;
+  border-left: 0 none;
+  border-top: 0 none;
+  transition: transform 0.2s ease-in-out;
+}

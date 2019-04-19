@@ -1,0 +1,311 @@
+@import './ams-theme';
+
+* {
+  font-size: 12px;
+}
+
+.ant-radio-inner {
+  border-color: #999;
+}
+
+.ant-form .ant-form-item,
+.ant-form-item .ant-select-selection {
+  margin-bottom: 6px;
+}
+
+.ant-select-lg .ant-select-selection--single {
+  height: 26px;
+}
+
+.ant-select-lg .ant-select-selection--multiple {
+  min-height: 26px;
+  padding-bottom: 0;
+}
+
+.ant-select-lg .ant-select-selection__rendered {
+  line-height: 26px;
+}
+
+.ant-select-selection-selected-value {
+  line-height: 26px;
+}
+
+.ant-table-thead > tr > th.ant-table-selection-column, .ant-table-tbody > tr > td.ant-table-selection-column {
+  min-width: 40px;
+  width: 40px;
+}
+
+.ant-btn {
+  padding: 0 13px;
+  margin: 0 8px;
+  height: 26px;
+}
+
+.m-card.ant-card {
+  border-radius: 0;
+  .ant-card-head {
+    height: 25px;
+    padding: 0 20px;
+    border-bottom: none;
+    margin-bottom: 0;
+    line-height: 35px;
+  }
+  .ant-card-head-title {
+    font-size: 14px;
+  }
+  .ant-card-body {
+    padding: 0;
+  }
+}
+
+.table-action {
+  margin: -16px 0;
+  display: flex;
+  a {
+    display: inline-block;
+    height: 44px;
+    line-height: 44px;
+    color: #232322;
+    flex: 1;
+  }
+}
+
+.m-card.border-bottom {
+  margin-bottom: 8px;
+  border-bottom: 1px dashed #d9d9d9;
+}
+
+.m-card {
+  padding-bottom: 5px;
+}
+
+.ant-radio-wrapper {
+  .ant-radio {
+    bottom: 1px;
+  }
+}
+
+.m-steps.ant-steps-dot {
+  .ant-steps-head-inner {
+    width: 21px;
+    height: 21px;
+    margin: 0;
+    border: none;
+    .ant-steps-icon-dot {
+      border-radius: 50%;
+    }
+  }
+  .ant-steps-status-process {
+    .ant-steps-head-inner {
+      width: 33px;
+      height: 33px;
+      margin: -6px 0;
+      border: 1px solid #00bd9c;
+      background-color: #fff;
+    }
+  }
+  .ant-steps-item.ant-steps-status-process .ant-steps-head-inner > .ant-steps-icon .ant-steps-icon-dot {
+    top: 5px;
+    left: 5px;
+    width: 21px;
+    height: 21px;
+    border-color: #00bd9c;
+    background-color: #00bd9c;
+  }
+  .ant-steps-item.ant-steps-status-wait .ant-steps-head-inner > .ant-steps-icon .ant-steps-icon-dot {
+    background-color: #dedede;
+  }
+  .ant-steps-item.ant-steps-status-process .ant-steps-title {
+    color: #00bd9c;
+  }
+  .ant-steps-item.ant-steps-status-finish .ant-steps-title {
+    color: @text-color;
+  }
+}
+
+.m-steps.ant-steps.ant-steps-small {
+  .ant-steps-tail {
+    top: 10px;
+  }
+  .ant-steps-main {
+    margin-top: 10px;
+  }
+}
+
+// 自定义表格
+.ant-table,
+.ant-table table,
+.ant-table thead {
+  line-height: 16px;
+  border-radius: 0;
+}
+
+.ant-table-wrapper {
+  margin: 0 20px;
+}
+
+.special .ant-table-thead > tr > th {
+  padding: 2px 6px;
+}
+
+.ant-table-thead > tr > th {
+  padding: 10px 8px;
+  word-wrap: normal;
+  white-space: nowrap;
+  background-color: #ddd;
+}
+
+.ant-table-tbody > tr:nth-child(even),
+.ant-table-placeholder {
+  background: #f6f6f4; // 表格奇数行加上背景色
+}
+
+.ant-table-tbody > tr > td {
+  border-bottom: 0 none;
+  padding: 10px 6px;
+}
+
+.ant-table-tbody > tr:last-child > td {
+  border-bottom: 1px solid #e9e9e9;
+}
+
+.ant-table-placeholder {
+  padding: 8px;
+}
+
+// label 颜色重置
+.ant-form-item-label label {
+  line-height: 24px;
+  font-size: 12px;
+  color: @text-color;
+}
+
+label {
+  font-size: 12px;
+}
+
+// 选择用户input
+.u-select-user-input {
+  height: 26px;
+  .ant-input-disabled {
+    height: 26px;
+    color: @text-color;
+    background-color: #fff;
+    cursor: pointer;
+  }
+}
+.ant-input-lg {
+  font-size: 12px;
+  padding: 4px 6px;
+  height: 26px;
+}
+.u-select-user-input.disabled {
+  .ant-input-disabled {
+    font-size: 12px;
+    background-color: #f7f7f7;
+    opacity: 1;
+    cursor: not-allowed;
+    color: rgba(0, 0, 0, 0.25);
+  }
+}
+
+// spin center
+.ant-spin-spinning.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+// 重置分页 页码选择 宽度
+.ant-pagination .ant-select {
+  width: auto;
+}
+
+.ant-pagination {
+  font-size: 12px;
+}
+
+.ant-table-pagination {
+  margin: 6px 0;
+}
+
+// 图标按钮提示文字样式
+.ant-tooltip-icon.ant-tooltip-placement-top {
+  .ant-tooltip-content {
+    position: relative;
+    top: 20px; // icon 高度为44 提示文字下移 20 靠近icon
+  }
+  .ant-tooltip-inner {
+    font-size: 12px;
+    padding: 4px 6px;
+    min-height: 24px;
+    line-height: 16px;
+    height: 24px;
+    background-color: #fff;
+    color: #232323;
+  }
+  .ant-tooltip-arrow {
+    bottom: -5px;
+    border-top-color: rgba(0, 0, 0, 0.1);
+  }
+  .ant-tooltip-arrow::before {
+    content: '';
+    position: absolute;
+    bottom: 1px;
+    left: 0;
+    width: 0;
+    height: 0;
+    margin-left: -5px;
+    border-width: 5px 5px 0;
+    border-color: transparent;
+    border-style: solid;
+    border-top-color: #fff;
+  }
+}
+
+// 图标按钮提示文字样式
+.ant-tooltip-icon.ant-tooltip-placement-left {
+  .ant-tooltip-inner {
+    background-color: #fff;
+    color: #232323;
+  }
+  .ant-tooltip-arrow {
+    border-top-color: rgba(0, 0, 0, 0.1);
+    border-left-color: #fff;
+  }
+  .ant-tooltip-arrow::before {
+    border-top-color: #fff;
+  }
+}
+
+// table center
+.table-center{
+  table thead tr th,
+  table tbody tr td {
+    text-align: center;
+  }
+}
+
+table thead tr th,
+table tbody tr td {
+  text-align: center;
+}
+
+// modal
+.ant-modal-body {
+  padding: 10px;
+}
+
+.ant-confirm .ant-modal-body {
+  padding: 10px 15px;
+}
+
+//menu
+.m-menu.ant-menu-inline .ant-menu-item .anticon + span, .m-menu.ant-menu-inline .ant-menu-submenu-title .anticon + span {
+  font-size: 14px;
+}
+
+.m-menu.ant-menu-inline .ant-menu-item {
+  font-size: 13px;
+}
